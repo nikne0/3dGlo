@@ -19,6 +19,8 @@ import slider from './modules/slider';
 import photos from './modules/photos';
 import calc from './modules/calc';
 import sendForm from './modules/sendForm';
+import Validator from './modules/validator';
+
 
 
 /****************TIMER*************************/
@@ -43,6 +45,70 @@ photos();
 calc(100);
 
 /***************VALIDATION FORMS********************************************/
+const form1 = new Validator({
+    selector: '#form1',
+    pattern: {},
+    method: {
+        'form1-name': [
+            ['notEmpty'],
+            ['pattern', 'name']
+        ],
+        'form1-phone': [
+            ['notEmpty'],
+            ['pattern', 'phone']
+        ],
+        'form1-email': [
+            ['notEmpty'],
+            ['pattern', 'email']
+        ]
+    }
+});
+
+const form2 = new Validator({
+    selector: '#form2',
+    pattern: {},
+    method: {
+        'form2-name': [
+            ['notEmpty'],
+            ['pattern', 'name']
+        ],
+        'form2-phone': [
+            ['notEmpty'],
+            ['pattern', 'phone']
+        ],
+        'form2-email': [
+            ['notEmpty'],
+            ['pattern', 'email']
+        ],
+        'form2-message': [
+            ['notEmpty'],
+            ['pattern', 'message']
+        ]
+    }
+});
+
+const form3 = new Validator({
+    selector: '#form3',
+    pattern: {},
+    method: {
+        'form3-name': [
+            ['notEmpty'],
+            ['pattern', 'name']
+        ],
+        'form3-phone': [
+            ['notEmpty'],
+            ['pattern', 'phone']
+        ],
+        'form3-email': [
+            ['notEmpty'],
+            ['pattern', 'email']
+        ]
+    }
+});
+
+form1.init();
+form2.init();
+form3.init();
 
 /*****************SEND AJAX FORM*********************************/
 sendForm();
