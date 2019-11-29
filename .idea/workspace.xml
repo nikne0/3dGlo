@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3c907bb-4c5d-4f60-a4dc-743f8cb35d5d" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="b3c907bb-4c5d-4f60-a4dc-743f8cb35d5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/script/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/calc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/sendForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/sendForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/toggleMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/toggleMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/validator.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,12 +42,17 @@
   </component>
   <component name="ProjectId" id="1UCzaFwwkoRRmGDA7j3b1TjBncS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/script" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -49,21 +64,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\ITfoundation\StudiareIT\CorsoIT\GloAcademy\3dGlo\src\modules" />
+      <recent name="G:\ITfoundation\StudiareIT\CorsoIT\GloAcademy\3dGlo\script" />
       <recent name="G:\ITfoundation\StudiareIT\CorsoIT\GloAcademy\3dGlo\plugins\validator" />
+      <recent name="G:\ITfoundation\StudiareIT\CorsoIT\GloAcademy\3dGlo\src\modules" />
       <recent name="G:\ITfoundation\StudiareIT\CorsoIT\GloAcademy\3dGlo\src" />
       <recent name="G:\ITfoundation\StudiareIT\CorsoIT\GloAcademy\3dGlo" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -83,7 +99,14 @@
       <workItem from="1574934655920" duration="8081000" />
       <workItem from="1574944207925" duration="2158000" />
       <workItem from="1574948284866" duration="1576000" />
-      <workItem from="1574950821968" duration="1051000" />
+      <workItem from="1574950821968" duration="3283000" />
+      <workItem from="1574969190687" duration="570000" />
+      <workItem from="1575008879371" duration="1472000" />
+      <workItem from="1575015345684" duration="711000" />
+      <workItem from="1575023487054" duration="2214000" />
+      <workItem from="1575037755886" duration="620000" />
+      <workItem from="1575052253427" duration="4260000" />
+      <workItem from="1575061391937" duration="4508000" />
     </task>
     <servers />
   </component>
@@ -102,5 +125,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1701" y="455" key="FileChooserDialogImpl" timestamp="1575058693655">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1701" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1575058693655" />
+    <state x="1501" y="435" key="IDE.errors.dialog" timestamp="1575062791480">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1501" y="435" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1575062791480" />
   </component>
 </project>

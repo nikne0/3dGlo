@@ -23,7 +23,9 @@ class Validator {
         this.form.addEventListener('submit', e => {
             e.preventDefault();
             this.elementsForm.forEach(elem => this.checkIt({target: elem}));
-            if (this.error.size) e.preventDefault();
+            if (this.error.size) {
+                e.preventDefault();
+            }
         });
     }
 
@@ -71,7 +73,9 @@ class Validator {
         elem.classList.remove('success');
         elem.classList.add('error');
 
-        if (elem.nextElementSibling && elem.nextElementSibling.classList.contains('validator-error')) return;
+        if (elem.nextElementSibling && elem.nextElementSibling.classList.contains('validator-error')) {
+            return;
+        }
 
         const errorDiv = document.createElement('div');
         errorDiv.textContent = "Error in this line";
@@ -107,24 +111,32 @@ class Validator {
     }
 
     setPattern() {
-        if (!this.pattern.name) this.pattern.name = /^[A-Za-zА-Яа-яЁё]+$/;
+        if (!this.pattern.name) {
+            this.pattern.name = /^[A-Za-zА-Яа-яЁё]+$/;
+        }
         // if (!this.pattern.name) this.pattern.name = /^[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+$/;
 
         // валидация на текст, позволяет ввести не только пробелы но и знаки припенания и другие символы
         // if (!this.pattern.message) this.pattern.message = /^[а-яА-ЯёЁ0-9\s-!"#$%&\\'()*,.:;<=>?@\[\]_`{|}~—«»]+$/;
 
         // валидация на текст, только буквы и пробелы
-        if (!this.pattern.message) this.pattern.message = /^[а-яА-ЯёЁ0-9\s]+$/;
+        if (!this.pattern.message) {
+            this.pattern.message = /^[а-яА-ЯёЁ0-9\s]+$/;
+        }
 
         // валидация на номер телефона,
         // if (!this.pattern.phone) this.pattern.phone = /^\+?[78]([-()]*\d){10}$/;   // без +
-        if (!this.pattern.phone) this.pattern.phone = /^\+[78]([-()]*\d){10}$/; // c +
+        if (!this.pattern.phone) {
+            this.pattern.phone = /^\+[78]([-()]*\d){10}$/;
+        } // c +
 
-        if (!this.pattern.email) this.pattern.email = /^\w+\.?_?-?\w+@\w+\.\w{2,}$/;
+        if (!this.pattern.email) {
+            this.pattern.email = /^\w+\.?_?-?\w+@\w+\.\w{2,}$/;
+        }
     }
 
 
 }
 
-export default Validator;
+// export default Validator;
     

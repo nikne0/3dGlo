@@ -50,20 +50,44 @@ const sendForm = () => {
                 .then((response) => {
                     if (response.status !== 200) throw new Error('status network not 200'); // jshint ignore:line
                     statusMessage.textContent = successMessage;
-
                 })
                 .then(() => {
                     item.reset();  // очистка форм после отправки
+                    progress.style.display = 'none';
                 })
                 .catch(error => {
                     statusMessage.textContent = errorMessage;
-
                 });
         });
 
+        // Создаем валидацию на ввод значений в импуты форм
+        item.addEventListener('input', (event) => {
+            const target = event.target,
+                inputPhone = document.querySelectorAll('.form-phone'),
+                inputName = document.querySelectorAll('input[name="user_name"]'),
+                inputText = document.querySelectorAll('input[name="user_message"]');
+
+            const validateForm = (input, inputType, pattern) => {
+                if (target.matches(inputType)) {
+                    input.forEach((item) => {
+                        item.addEventListener('change', () => {
+                            if (item.value != item.value.match(pattern)){
+                                item.value = '';
+                                item.style.border = '2px solid red';
+                            } else {
+                                item.style.border = 'none';
+                            }
+                        });
+                    });
+                }
+            };
+
+            validateForm(inputPhone, 'input[type=tel]', /^\+?[78]\d{10}$/);
+            validateForm(inputName, 'input[type=text]', /^[A-Za-zА-Яа-яЁё]+$/);
+            validateForm(inputText, 'input .mess', /^[а-яА-ЯёЁ0-9\s]+$/);
+        });
 
     });
-
 
     const postData = (body) => {
         return fetch('./server.php', {

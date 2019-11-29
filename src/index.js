@@ -19,7 +19,7 @@ import slider from './modules/slider';
 import photos from './modules/photos';
 import calc from './modules/calc';
 import sendForm from './modules/sendForm';
-import Validator from './modules/validator';
+
 
 
 
@@ -45,6 +45,7 @@ photos();
 calc(100);
 
 /***************VALIDATION FORMS********************************************/
+/*
 const form1 = new Validator({
     selector: '#form1',
     pattern: {},
@@ -109,6 +110,7 @@ const form3 = new Validator({
 form1.init();
 form2.init();
 form3.init();
+*/
 
 /*****************SEND AJAX FORM*********************************/
 sendForm();

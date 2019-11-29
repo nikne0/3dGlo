@@ -30,13 +30,14 @@ const slider = () => {
         elem[index].classList.add(strClass);
     };
 
-
     const autoPlaySlide = () => {
         prevSlide(slide, currentSlide, 'portfolio-item-active');
         prevSlide(dot, currentSlide, 'dot-active');
         currentSlide++;
 
-        if (currentSlide >= slide.length) currentSlide = 0;
+        if (currentSlide >= slide.length) {
+            currentSlide = 0;
+        }
 
         nextSlide(slide, currentSlide, 'portfolio-item-active');
         nextSlide(dot, currentSlide, 'dot-active');
@@ -54,7 +55,9 @@ const slider = () => {
         event.preventDefault();
         let target = event.target;
 
-        if (!target.matches('.portfolio-btn, .dot')) return;
+        if (!target.matches('.portfolio-btn, .dot')) {
+            return;
+        }
 
         prevSlide(slide, currentSlide, 'portfolio-item-active');
         prevSlide(dot, currentSlide, 'dot-active');
@@ -65,13 +68,18 @@ const slider = () => {
             currentSlide--;
         } else if (target.matches('.dot')) {
             dot.forEach((elem, index) => {
-                if (elem === target)
+                if (elem === target) {
                     currentSlide = index;
+                }
             });
         }
 
-        if (currentSlide >= slide.length) currentSlide = 0;
-        if (currentSlide < 0) currentSlide = slide.length - 1;
+        if (currentSlide >= slide.length) {
+            currentSlide = 0;
+        }
+        if (currentSlide < 0) {
+            currentSlide = slide.length - 1;
+        }
 
         nextSlide(slide, currentSlide, 'portfolio-item-active');
         nextSlide(dot, currentSlide, 'dot-active');
